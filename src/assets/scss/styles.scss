@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Anybody', sans-serif;
+}
+
+header, footer {
+    background-color: hotpink;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.projets-holder {
+
+    & > div {
+        max-width: 200px;
+        border: 1px solid black;
+        border-radius: 30px;
+        padding: 30px;
+
+        button {
+            background-color: black;
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            display: block;
+            margin: 0 auto;
+            transition: all 0.3s ease-in-out;
+
+            &:hover, &:focus {
+                background-color: hotpink;
+                color: black;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.modale-holder {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
