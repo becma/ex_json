@@ -1,0 +1,28 @@
+[
+    {
+        "id": "1",
+        "name": "Projet 1",
+        "img": "./static/img/projet1.jpg",
+        "imgAlt": "Image du projet 1",
+        "description": "When in doubt, wash Gate keepers of hell. Cough furball leave buried treasure in the sandbox for the toddlers but attack like a vicious monster yet cuddle no cuddle cuddle love scratch scratch destroy couch thinking about you i'm joking it's food always food hiss at vacuum cleaner.",
+        "date": "2024-10-24",
+        "type": "programmation",
+        "liens": {
+            "github": "https://github.com/becma/ex_json"
+        },
+        "stack" : ["html", "sass", "javascript", "npm", "git"]
+    },
+    {
+        "id": "1",
+        "name": "Projet 1",
+        "img": "./static/img/projet1.jpg",
+        "imgAlt": "Image du projet 1",
+        "description": "When in doubt, wash Gate keepers of hell. Cough furball leave buried treasure in the sandbox for the toddlers but attack like a vicious monster yet cuddle no cuddle cuddle love scratch scratch destroy couch thinking about you i'm joking it's food always food hiss at vacuum cleaner.",
+        "date": "2024-10-24",
+        "type": "programmation",
+        "liens": {
+            "github": "https://github.com/becma/ex_json"
+        },
+        "stack" : ["html", "sass", "javascript", "npm", "git"]
+    }
+]
