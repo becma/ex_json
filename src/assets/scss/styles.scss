@@ -1,7 +1,17 @@
+@use 'grid';
 @import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    font-size: 16px;
+}
 
 * {
     font-family: 'Anybody', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -9,13 +19,14 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    max-width: 100vw;
     
     & > header, & > footer {
         background-color: hotpink;
         color: white;
-        padding: 50px;
         text-align: center;
         width: 100%;
+        box-sizing: border-box;
     }
 }
 
@@ -26,6 +37,13 @@ main {
 }
 
 .projets-holder {
+    display: grid;
+    grid-template-areas: 
+        "tuile1 tuile2 tuile3"
+        "tuile4 tuile2 tuile5"
+        "tuile6 tuile6 tuile5";
+    grid-auto-rows: 1fr;
+    justify-content: center;
 
     & > div {
         max-width: 200px;
@@ -106,6 +124,45 @@ main {
                         content: " /";
                     }
                 }
+
+                a {
+                    transition: all 0.3s ease-in-out;
+                    position: relative;
+                    text-decoration: none;
+                    padding: 0 5px;
+                    display: inline-block;
+                    height: 100%;
+    
+                    &:after {
+                        background-color: black;
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        height: 1px;
+                        width: 100%;
+                        transition: all 0.5s ease-in-out;
+                        z-index: -1;
+                    }
+    
+                    &:link, &:visited {
+                        color: black;
+                    }
+                    
+                    &:hover, &:focus {
+                        color: white;
+                        text-decoration: none;
+    
+                        &:after {
+                            height: 100%;
+                        }
+                    }
+    
+                    > i {
+                        margin-left: 10px;
+                        font-size: 1.5rem;
+                    }
+                }
             }
         }
     }
@@ -113,6 +170,22 @@ main {
 
 .flex {
     display: flex;
+
+    &.flex-column {
+        flex-direction: column;
+    }
+
+    &.align-center {
+        align-items: center;
+    }
+
+    &.justify-between {
+        justify-content: space-between;
+    }
+
+    &.gap-10 {
+        gap: 10px;
+    }
 }
 
 .hidden {

@@ -10,18 +10,80 @@
         "liens": {
             "github": "https://github.com/becma/ex_json"
         },
-        "stack" : ["html", "sass", "javascript", "npm", "git"]
+        "stack" : ["html", "sass", "javascript", "npm", "git"],
+        "gridArea": 1
     },
     {
-        "id": "1",
-        "name": "Projet 1",
-        "img": "./static/img/projet1.jpg",
-        "imgAlt": "Image du projet 1",
+        "id": "2",
+        "name": "Projet 2",
+        "img": "./static/img/projet2.jpg",
+        "imgAlt": "Image du projet 2",
         "description": "When in doubt, wash Gate keepers of hell. Cough furball leave buried treasure in the sandbox for the toddlers but attack like a vicious monster yet cuddle no cuddle cuddle love scratch scratch destroy couch thinking about you i'm joking it's food always food hiss at vacuum cleaner.",
         "date": "2024-10-24",
         "type": "programmation",
         "liens": {
+            "behance": "https://github.com/becma/ex_json",
             "github": "https://github.com/becma/ex_json"
+        },
+        "stack" : ["html", "sass", "javascript", "npm", "git"],
+        "colStart": 2,
+        "colSpan": 1,
+        "rowStart": 1,
+        "rowSpan": 2,
+        "gridArea": 2
+    },
+    {
+        "id": "3",
+        "name": "Projet 3",
+        "img": "./static/img/projet3.png",
+        "imgAlt": "Image du projet 3",
+        "description": "When in doubt, wash Gate keepers of hell. Cough furball leave buried treasure in the sandbox for the toddlers but attack like a vicious monster yet cuddle no cuddle cuddle love scratch scratch destroy couch thinking about you i'm joking it's food always food hiss at vacuum cleaner.",
+        "date": "2024-10-24",
+        "type": "programmation",
+        "liens": {
+            "codepen": "https://github.com/becma/ex_json"
+        },
+        "stack" : ["html", "sass", "javascript", "npm", "git"]
+    },
+    {
+        "id": "4",
+        "name": "Projet 4",
+        "img": "./static/img/projet4.jpg",
+        "imgAlt": "Image du projet 4",
+        "description": "When in doubt, wash Gate keepers of hell. Cough furball leave buried treasure in the sandbox for the toddlers but attack like a vicious monster yet cuddle no cuddle cuddle love scratch scratch destroy couch thinking about you i'm joking it's food always food hiss at vacuum cleaner.",
+        "date": "2024-10-24",
+        "type": "programmation",
+        "liens": {
+            "figma": "https://github.com/becma/ex_json"
+        },
+        "stack" : ["html", "sass", "javascript", "npm", "git"]
+    },
+    {
+        "id": "5",
+        "name": "Projet 5",
+        "img": "./static/img/projet5.png",
+        "imgAlt": "Image du projet 5",
+        "description": "When in doubt, wash Gate keepers of hell. Cough furball leave buried treasure in the sandbox for the toddlers but attack like a vicious monster yet cuddle no cuddle cuddle love scratch scratch destroy couch thinking about you i'm joking it's food always food hiss at vacuum cleaner.",
+        "date": "2024-10-24",
+        "type": "programmation",
+        "liens": {
+            "dribbble": "https://github.com/becma/ex_json"
+        },
+        "stack" : ["html", "sass", "javascript", "npm", "git"]
+    },
+    {
+        "id": "6",
+        "name": "Projet 6",
+        "img": "./static/img/projet6.jpg",
+        "imgAlt": "Image du projet 6",
+        "description": "When in doubt, wash Gate keepers of hell. Cough furball leave buried treasure in the sandbox for the toddlers but attack like a vicious monster yet cuddle no cuddle cuddle love scratch scratch destroy couch thinking about you i'm joking it's food always food hiss at vacuum cleaner.",
+        "date": "2024-10-24",
+        "type": "programmation",
+        "liens": {
+            "youtube": "https://github.com/becma/ex_json",
+            "github": "https://github.com/becma/ex_json",
+            "figma": "https://github.com/becma/ex_json",
+            "codepen": "https://github.com/becma/ex_json"
         },
         "stack" : ["html", "sass", "javascript", "npm", "git"]
     }

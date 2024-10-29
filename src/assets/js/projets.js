@@ -23,8 +23,10 @@ const generateModalContent = (projet) => {
     contenuHolder.append(img);
 
     const infosHolder = document.createElement('div');
+    infosHolder.classList.add('flex', 'flex-column', 'justify-between')
     const typeStackHolder = document.createElement('div');
     typeStackHolder.classList.add('flex');
+    typeStackHolder.classList.add('align-center', 'justify-between');
     const typeP = document.createElement('p');
     typeP.innerText = projet.type;
     typeStackHolder.append(typeP);
@@ -37,6 +39,31 @@ const generateModalContent = (projet) => {
     })
     typeStackHolder.append(stackHolder);
     infosHolder.append(typeStackHolder);
+
+    //description
+    const descriptionHolder = document.createElement('p');
+    descriptionHolder.innerText = projet.description;
+    infosHolder.append(descriptionHolder);
+
+    //liens
+    const liensHolder = document.createElement('ul');
+    liensHolder.classList.add('flex', 'gap-10')
+    const projetLiens = projet.liens;
+    for (var lien in projetLiens) {
+        const liElement = document.createElement('li');
+        const aElement = document.createElement('a');
+        const iElement = document.createElement('i');
+        aElement.innerText = "Voir sur " + lien.toUpperCase();
+        aElement.href = projetLiens[lien];
+        //1ere loop - projetLiens['youtube'];
+        iElement.classList.add('fa-brands', 'fa-' + lien);
+        //1ere loop - fa-youtube
+        aElement.append(iElement);
+        liElement.append(aElement);
+        liensHolder.append(liElement);
+    }
+    infosHolder.append(liensHolder);
+
     contenuHolder.append(infosHolder);
 
     //montrer la modale
@@ -53,6 +80,21 @@ const generateProjectsList = () => {
 
     projets.forEach(projet => {
         const cardHolder = document.createElement('div');
+        // if(projet.colStart) {
+        //     cardHolder.classList.add('col-start-' + projet.colStart);
+        // }
+        // if (projet.colSpan) {
+        //     cardHolder.classList.add('col-span-' + projet.colSpan);
+        // }
+        // if (projet.rowStart) {
+        //     cardHolder.classList.add('row-start-' + projet.rowStart);
+        // }
+        // if (projet.rowSpan) {
+        //     cardHolder.classList.add('row-span-' + (projet.rowSpan));
+        // }
+        if (projet.gridArea) {
+            cardHolder.classList.add('tuile-' + projet.gridArea);
+        }
 
         const header = document.createElement('header');
         const title = document.createElement('h2');
